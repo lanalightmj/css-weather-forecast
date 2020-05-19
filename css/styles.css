@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    	box-sizing: border-box;
+	transition: all .1s ease-in;
+}
+
+html {
+	height: 100%;
+}
+
+body:before,
+body:after {
+	content: "";
+	position: fixed;
+	background: #2b81ac;
+	left: 0;
+	right: 0;
+	height: 20px;
+}
+
+body:before {
+	top: 0;
+}
+
+body:after {
+	bottom: 0;
+}
+
+body {
+	background-color: #3399cc;
+	border-left: 20px solid #2b81ac;
+	border-right: 20px solid #2b81ac;
+	min-height: 100%;
+	color: #fff;
+	font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+
+.wf-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+.wf-header{
+	padding: 60px 0 20px;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 26px;
+	text-transform: capitalize;
+}
+
+.wf-footer {
+	margin: 20px 0;
+	font-size: 17px;
+}
+
+.wf-city-list {
+	list-style-type: none;
+	font-size: 0;
+	border: 2px solid #fff;
+	background-color: #fff;
+}
+
+.wf-city-list:hover>li {
+	opacity: .6;
+}
+
+.wf-city-list li {
+	display: inline-block;
+	font-size: 20px;
+	border: 2px solid #fff;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.wf-city-list>li:hover {
+	opacity: 1;
+}
+
+.wf-city-list li:nth-child(11n+1) {
+	background-color: #3399cc;
+}
+
+.wf-city-list li:nth-child(11n+2) {
+	background-color: #33cccc;
+}
+
+.wf-city-list li:nth-child(11n+3) {
+	background-color: #996699;
+}
+
+.wf-city-list li:nth-child(11n+4) {
+	background-color: #c24747;
+}
+
+.wf-city-list li:nth-child(11n+5) {
+	background-color: #e2674a;
+}
+
+.wf-city-list li:nth-child(11n+6) {
+	background-color: #ffcc66;
+}
+
+.wf-city-list li:nth-child(11n+7) {
+	background-color: #99cc99;
+}
+
+.wf-city-list li:nth-child(11n+8) {
+	background-color: #669999;
+}
+
+.wf-city-list li:nth-child(11n+9) {
+	background-color: #cc6699;
+}
+
+.wf-city-list li:nth-child(11n+10) {
+	background-color: #339966;
+}
+
+.wf-city-list li:nth-child(11n+11) {
+	background-color: #666699;
+}
+
+.wf-city-list li.wf-single {
+	width: 25%;
+}
+
+.wf-city-list li.wf-double {
+	width: 50%;
+}
+
+.wf-city-list li.wf-quadruple {
+	width: 100%;
+}
+
+.wf-city-weather {
+	color: rgba(255, 255, 255, .7);
+	font-size: 18px;
+	margin: 10px 0 0;
+}
+
+.wf-city-weather i {
+	font-size: 30px;
+	vertical-align: bottom;
+}
+
+@media screen and (max-width: 600px) {
+
+	.wf-city-list li[class*='wf-'] {
+		width: 100%;
+	}
+
+	body {
+		border: none;
+	}
+
+	body:before,
+	body:after {
+		display: none;
+	}
+}
